@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background-image: url(./multimedia/danny-de-vylder-25v4ZFl9fDw-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.logo{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Marck Script', cursive;
+    font-size: 5rem;
+}
+h2, h4{
+    color: rgb(218, 218, 218);
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2,5rem;
+}
+h2 a{
+    color: white;
+}
+nav{
+    padding: 1;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul a{
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    padding: 0.7rem;
+    display: block;
+    background-color: #bebebe92;
+    
+}
+nav li a:hover{
+    background-color: #888888;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    border-radius: 100%;
+}
+.textoindex{
+    display: flex;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 3rem;
+    padding:30px;
+    margin: 5rem;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.575);
+    align-items: center;
+}
+footer{
+    color: rgb(2, 2, 2);
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1,6rem;
+    background-color: rgba(255, 254, 254, 0.5);
+}
+footer p a{
+    font-style: none;
+    color: white;
+}
+img{
+    position: relative;
+}
+
+/*GALERIA*/
+
+.imagenes img{
+    display: flex;
+    width: 25rem;
+    border: 2px double gray;
+    position: relative;
+    justify-content: space-between;
+}
+
+/*DONDE ENCONTRARME*/
+
+.mapa{
+    margin: 0;
+    padding: 0;
+    justify-items: center;
+}
+.textodondeencontrarme{
+    font-style: none;
+    color: white;
+}
+
+/*CONTACTO*/
+
+.cuadrocontacto{
+    margin: 0;
+    padding: 0;
+    border-style: solid 2px black;
+    background-color: rgba(255, 255, 255, 0.507);
+    font-size: 2rem;
+    align-content: center;
+}
+.textocuadro{
+    color: white;
+    justify-content: center;
+}
+.enviar{
+    color: black;
+    justify-content: center;
+}
+.borrar{
+    color: black;
+    justify-content: center;
+}
+
+/*GRID*/
+
+.contendor{
+display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-row: repeat(5, 1fr);
+
+    grid-template-areas: 
+    "menu menu menu menu menu"
+    "logo logo logo logo logo"
+    "textoindex textoindex textoindex textoindex textoindex"
+    "textoindex textoindex textoindex textoindex textoindex"
+    "footer footer footer footer footer";
+}
+
+.menu{
+    grid-area: menu;
+}
+.textoindex{
+    grid-area: textoindex;
+}
+.logo{
+    grid-area: logo;
+}
+.footer{
+    grid-area: footer;
+}
+
+
+.imagenes{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row: repeat(5, 1fr);
+    
+    grid-template-areas: 
+        "menu menu menu"
+        "logo logo logo"
+        "imagenes imagenes imagenes"
+        "imagenes imagenes imagenes"
+        "footer footer footer";
+}
+.imagenes{
+    grid-area: imagenes;
+}
+.donde{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-row: repeat(5, 1fr);
+    
+    grid-template-areas: 
+        "menu menu menu menu menu"
+        "logo logo logo logo logo"
+        "mapa mapa mapa mapa mapa"
+        "mapa mapa mapa mapa mapa"
+        "footer footer footer footer footer";
+}
+.mapa{
+    grid-area: mapa;
+}
+.contacto{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-row: repeat(5, 1fr);
+    
+    grid-template-areas: 
+        "menu menu menu menu menu"
+        "logo logo logo logo logo"
+        "cuadro cuadro cuadro cuadro cuadro"
+        "cuadro cuadro cuadro cuadro cuadro"
+        "footer footer footer footer footer";
+}
+.cuadro{
+    grid-area: cuadro;
+}
+
+/*RESPONSIVE*/
+
+@media only screen and (max-width: 480px){
+    .contendor{
+        grid-template-areas: 
+        "menu menu"
+        "logo logo"
+        "textoindex textoindex"
+        "textoindex textoindex"
+        "footer footer";}
+    .textoindex{
+        font-size: 1.8rem;}
+    .imagenes{
+        grid-template-areas: 
+        "menu menu"
+        "logo logo"
+        "imagenes"
+        "imagenes"
+        "footer footer";
+        align-items: center;
+        display: block;}
+    .contacto{
+        grid-template-areas: 
+        "menu menu"
+        "logo logo"
+        "cuadro cuadro"
+        "cuadro cuadro"
+        "footer footer";
+        align-items: center;
+        display: block;
+    }
+    .donde{
+        grid-template-areas: 
+        "menu menu"
+        "logo logo"
+        "mapa mapa"
+        "mapa mapa"
+        "footer footer";}
+    }
+
