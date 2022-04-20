@@ -11,10 +11,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
 }
-.logo{
-    margin-top: 20px;
-    margin-left: 20px;
-}
+
 h1{
     color: rgb(255, 255, 255);
     text-align: center;
@@ -30,30 +27,7 @@ h2, h4{
 h2 a{
     color: white;
 }
-nav{
-    padding: 1;
-}
-nav ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: flex-end;
-}
-nav ul a{
-    color: rgb(255, 255, 255);
-    text-decoration: underline;
-    padding: 0.7rem;
-    display: block;
-    background-color: #bebebe92;
-    
-}
-nav li a:hover{
-    background-color: #888888;
-    color:rgb(0, 0, 0);
-    font-weight: bold;
-    border-radius: 100%;
-}
+
 .textoindex{
     display: flex;
     font-family: 'Source Sans Pro', sans-serif;
