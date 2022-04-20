@@ -27,7 +27,6 @@
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="index.html">Principal</a>
               <a class="nav-link" href="galeria.html">Galeria</a>
-              <a class="nav-link" href="dondeencontrarme.html">¿Dónde encontrarme?</a>
               <a class="nav-link" href="contacto.html">Contacto</a>
               <a class="nav-link disabled"></a>
             </div>
@@ -40,53 +39,38 @@
         <h2>
             <em>CONTACTO</em>
         </h2>
-     
-        <section>
             
-<br>
-        </section>
+        <br>
         <p>
             <h2>Si usted deséa contactarse conmigo, lo invito a hacerlo a traves del siguiente formulario:</h2>
         </p>
         <br>
         <section>
-                <fieldset class="cuadrocontacto">
-                        
-                           <form action="">
-                               <div class="textocuadro">
-                                   <label for="Nombre"> Escribe tu nombre</label>
-                                   <input type="text" placeholder="Escribe tu nombre aquí" name="Nombre">
-                               </div> 
-                               
-                               <div class="textocuadro">
-                                   <label for="Apellido"> Escribe tu apellido</label>
-                                   <input type="text" placeholder="Escribe tu apellido aquí" name="Apellido">
-                               </div>
-                               
-                               <div class="textocuadro">
-                                   <label for="email">Escribe tu mail *</label>
-                                   <input type="email" placeholder="Escribe tu email aquí" name="Email" required>
-                               </div>
-                               
-                               <div class="textocuadro">
-                                   <label for="comentario">Dejame tu comentario</label> <br>
-                                   <textarea name="comentario" id="" cols="70" rows="10"></textarea>
-                               </div>
-                               
-                               <input type="submit" value="Enviar datos" class="enviar">
-                               <input type="reset" value="Borrar datos" class="borrar">
-                           </form>
-                           <form action="s.c.roberto.rs@gmail.com"></form>
-                       </fieldset>
-                   </section>
+
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Comments</label>
+          </div>
+
+        </section>
     </header>
     <br>
-    <footer class="footer">
-        <section>
-            <p>
-                Si deseas ver mas, visítame en mi cuenta de Instagram <a href="https://www.instagram.com/rsinclair_photograph/" target="_blanck"> RSinclair Photograph</a>
-            </p>
-        </section>
-    </footer>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+          </a>
+          <span class="text-muted">&copy; RSinclair Photography</span>
+        </div>
+        </ul>
+      </footer>
 </body>
 </html>
