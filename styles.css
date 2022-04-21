@@ -163,4 +163,6 @@ display: grid;
         "logo logo"
         "cuadro cuadro"
         "cuadro cuadro"
-        "footer footer";}
+        "footer footer";
+        align-items: center;
+        display: block;}}
